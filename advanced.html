@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        ul li{
+         margin: 15px;
+        }
+        p{
+            color: #d93025;
+            Font: 20px Arial, sans-serif;
+            margin-left: 40px;
+        }
+        a{
+            margin-left: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<head>
+    <title>Advanced Search</title>
+</head>
+    <body>
+        <a href="index.html"><img src="Google.png" alt="Google logo" height="24" width="74"></a>
+        <form action="https://www.google.com/search">
+        <a href="index.html" class="alternative_search">Google</a>
+            <p>Advanced Search</p>
+            <div class="border_line"></div>
+        <ul class="advanced_list">
+            <li class="first_list">Find pages with....</li>
+            <div class="column">
+                <li class="flex-container">Contains all these words:</li>
+                <li><input type="text" name="q" class="Advanced1"></li>
+            </div>
+            <div class="column">
+                <li class="flex-container">These exact words or phrase:</li>
+                <li><input type="text" name="as_epq" class="Advanced1"></li>
+            </div>
+            <div class="column">
+                <li class="flex-container">Any of these words:</li>
+                <li><input type="text" name="as_oq" class="Advanced1"></li>
+            </div>
+            <div class="column">
+                <li class="flex-container">None of these words:</li>
+                <li><input type="text" name="as_eq" class="Advanced1"></li>
+            </div>
+        </ul>
+        <div>
+            <input type="submit" Value="Advanced Search" class="asb">
+        </div>
+    </form>
+    </body>
+</html>
